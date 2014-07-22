@@ -1,8 +1,6 @@
 #include <iostream>
 #include "header.h"
 
-int Math::matread(){
+void Math::announce(){
   cout<<"数学の点数を入力- - "<<endl;
-  cin>>mat;
-  return 0;
 }

@@ -1,33 +1,35 @@
 using namespace std;
 
-class Math {
-  protected:
-   int matread();
-   int mat;
+class Super {
+  public:
+    int read();
+    int getScore();
+  private:
+    int score;
 };
 
-class Social {
-  protected:
-   int socread();
-   int soc;
+class Math : public Super {
+  public:
+   void announce();
 };
 
-class Science {
-  protected:
-   int sciread();
-   int sci;
+class Social : public Super {
+  public:
+   void announce();
 };
 
-class Calc: public Math, public Social, public Science {
+class Science : public Super {
+  public:
+   void announce();
+};
+
+/*
+class Calc {
   private:
     int s;
     int a;
   public:
-    Calc(){
-      matread();
-      socread();
-      sciread();
-    }
-    int sum();
-    int avg();
+    int sum(int math, int social, int science);
+    int avg(int math, int social, int science);
 };
+*/

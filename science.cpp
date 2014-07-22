@@ -1,8 +1,6 @@
 #include <iostream>
 #include "header.h"
 
-int Science::sciread(){ 
+void Science::announce(){ 
   cout<<"理科の点数を入力- - "<<endl;
-  cin>>sci;
-  return 0;
 }
